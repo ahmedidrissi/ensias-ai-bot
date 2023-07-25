@@ -1,0 +1,28 @@
+.message {
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+
+.message-outgoing {
+    background-color: var(--outgoing-message-bg);
+}
+
+.message-incoming {
+    background-color: var(--incoming-message-bg);
+}
+
+.message .message-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message .message-avatar img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 2px;
+}

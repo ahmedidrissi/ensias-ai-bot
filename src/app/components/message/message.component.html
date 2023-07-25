@@ -1,0 +1,16 @@
+<div *ngIf="message" class="message" [ngClass]="message.type === 'outgoing' ? 'message-outgoing' : 'message-incoming'">
+    <div class="message-detail">
+        <div class="message-avatar">
+            <img src="{{ message.avatar }}" alt="{{ message.username }}">
+        </div>
+        <div class="message-content">
+            <p>{{ message.content }}</p>
+        </div>
+    </div>
+    <div class="message-copy">
+        <fa-icon 
+        (click)="copyMessage(message.content)"
+        [icon]="faCopy"
+        ></fa-icon>
+    </div>
+</div>
