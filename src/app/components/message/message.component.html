@@ -1,7 +1,13 @@
-<div *ngIf="message" class="message" [ngClass]="message.type === 'outgoing' ? 'message-outgoing' : 'message-incoming'">
+<div *ngIf="message" class="message" [ngClass]="'message-'+message.type">
     <div class="message-detail">
         <div class="message-avatar">
             <img src="{{ message.avatar }}" alt="{{ message.username }}">
+        </div>
+        <div *ngIf="message.typing" class="typing-animation">
+            <span class="typing-dot" style="animation-delay: 0.2s;"></span>
+            <span class="typing-dot" style="animation-delay: 0.3s;"></span>
+            <span class="typing-dot" style="animation-delay: 0.4s;"></span>
+            <span class="typing-dot" style="animation-delay: 0.5s;"></span>
         </div>
         <div class="message-content">
             <p>{{ message.content }}</p>

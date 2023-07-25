@@ -8,28 +8,45 @@ import { Message } from '../message/Message';
 })
 export class ChatComponent implements OnInit{
 
-  public messages: Message[] = [
-    new Message(
-      'outgoing',
-      'https://img.icons8.com/material-rounded/35/ffffff/user.png',
-      'User',
-      'Hello, this is a user message!'
-    ),
-    new Message(
-      'incoming',
-      'assets/chatgpt-icon.svg',
-      'Bot',
-      'Hello, this is a bot message!'
-    )
-  ];
+  public messages: Message[] = [];
+
+  public typingDots: Message = new Message(
+    'incoming',
+    'assets/chatgpt-icon.svg',
+    'Bot',
+    '',
+    true
+  )
 
   constructor(
   ) { }
 
   ngOnInit() {
+    this.sendMessage('Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
   }
 
   copyMessage(content: string) {
     console.log(content);
+  }
+
+  sendMessage(message: string) {
+    if (message.length > 0) {
+      this.messages.push(new Message(
+        'outgoing',
+        'https://img.icons8.com/material-rounded/35/ffffff/user.png',
+        'User',
+        message
+      ));
+      this.messages.push(this.typingDots);
+      setTimeout(() => {
+        this.messages.pop();
+        this.messages.push(new Message(
+          'incoming',
+          'assets/chatgpt-icon.svg',
+          'Bot',
+          'Hello, this is a bot message!'
+        ));
+      }, 2000);
+    }
   }
 }
