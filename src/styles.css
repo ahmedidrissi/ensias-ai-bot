@@ -12,13 +12,14 @@
     --icon-color: #ACACBE;
     --icon-hover-bg: #5b5e71;
     --placeholder-color: #cccccc;
-    --outgoing-chat-bg: #343541;
-    --incoming-chat-bg: #444654;
-    --outgoing-chat-border: #343541;
-    --incoming-chat-border: #444654;
+    --main-bg-color: #2C2C3A;
+    --outgoing-message-bg: #343541;
+    --incoming-message-bg: #444654;
+    --outgoing-message-border: #343541;
+    --incoming-message-border: #444654;
 }
 
 body {
-    background-color: var(--outgoing-chat-bg);
+    background-color: var(--main-bg-color);
     color: var(--text-color);
 }
