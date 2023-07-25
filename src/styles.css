@@ -19,5 +19,6 @@
 }
 
 body {
-    color: var(--outgoing-chat-bg);
+    background-color: var(--outgoing-chat-bg);
+    color: var(--text-color);
 }
