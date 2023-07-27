@@ -28,7 +28,9 @@ export class ChatService implements OnInit {
         'User',
         message
       ));
-      this.messages.push(this.typingDots);
+      setTimeout(() => {
+        this.messages.push(this.typingDots);
+      }, 1000);
       setTimeout(() => {
         this.messages.pop();
         this.messages.push(new Message(

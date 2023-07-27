@@ -1,7 +1,9 @@
-<div *ngFor="let message of chatService.messages">
-  <app-message
-    [message]="message"
-  ></app-message>
+<div class="chat-container">
+  <div *ngFor="let message of chatService.messages">
+    <app-message
+      [message]="message"
+    ></app-message>
+  </div>
 </div>
 
 <app-prompt></app-prompt>
