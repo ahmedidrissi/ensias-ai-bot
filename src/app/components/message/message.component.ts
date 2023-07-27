@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faCopy } from '@fortawesome/free-solid-svg-icons';
+import { MessageService } from 'src/app/services/message.service';
 import { Message } from './Message';
-import { faCopy } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-message',
@@ -8,16 +9,19 @@ import { faCopy } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent implements OnInit{
-  @Input() public message: Message = new Message('', '', '', '');
-  faCopy = faCopy;
   
-  constructor() { }
+  faCopy = faCopy;
+  @Input() public message: Message = new Message('', '', '', '');
+  
+  constructor(
+    public messageService: MessageService
+  ) { }
 
   ngOnInit() {
   }
 
   copyMessage(content: string) {
-    console.log(content);
+    this.messageService.copyMessage(content);
   }
 
 }

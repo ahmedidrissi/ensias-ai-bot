@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { MessageComponent } from './components/message/message.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PromptComponent } from './components/prompt/prompt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
-    MessageComponent
+    MessageComponent,
+    PromptComponent
   ],
   imports: [
     BrowserModule,
