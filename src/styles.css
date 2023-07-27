@@ -17,6 +17,8 @@
     --incoming-message-bg: #444654;
     --outgoing-message-border: #343541;
     --incoming-message-border: #444654;
+    --prompt-bg: #373747;
+    --prompt-input-bg: #434354;
 }
 
 body {

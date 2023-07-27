@@ -7,11 +7,12 @@
             placeholder="Type your message here..."
             (keyup.enter)="sendMessage()"
         />
-        <input 
-            type="button" 
-            class="button"
-            value="Send"
-        />
+        <div class="btn">
+            <fa-icon 
+                [icon]="faTelegram"
+                (click)="sendMessage()"
+            ></fa-icon>
+        </div>
     </div>
     <!-- copyright -->
     <div class="prompt-footer">

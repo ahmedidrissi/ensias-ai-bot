@@ -15,11 +15,5 @@ export class ChatComponent implements OnInit{
 
   ngOnInit() {
     this.chatService.appendMessage('Hello, this is a user message!');
-    // setTimeout(() => {
-    //   this.chatService.appendMessage('Hello, this is a user message!');
-    // }, 2000);
-    // setTimeout(() => {
-    //   this.chatService.appendMessage('Hello, this is a user message!');
-    // }, 4000);
   }
 }

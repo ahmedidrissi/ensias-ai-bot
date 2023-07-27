@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PromptService } from '../../services/prompt.service';
+import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-prompt',
@@ -7,6 +8,8 @@ import { PromptService } from '../../services/prompt.service';
   styleUrls: ['./prompt.component.css']
 })
 export class PromptComponent implements OnInit {
+
+    faTelegram = faTelegramPlane;
   
     constructor(
       public promptService: PromptService
