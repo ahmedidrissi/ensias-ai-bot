@@ -20,8 +20,8 @@ export class ChatService implements OnInit {
   ngOnInit() {
   }
 
-  appendMessage(message: string) {
-    if (message.length > 0) {
+  appendMessage(message: string) {    
+    if (message.length > 1) {
       this.messages.push(new Message(
         'outgoing',
         'https://img.icons8.com/material-rounded/35/ffffff/user.png',
@@ -39,6 +39,7 @@ export class ChatService implements OnInit {
           'Bot',
           'Hello, this is a bot message!'
         ));
+        localStorage.setItem('messages', JSON.stringify(this.messages)); 
       }, 2000);
     }
   }

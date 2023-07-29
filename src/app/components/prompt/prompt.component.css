@@ -14,14 +14,17 @@
 }
 
 .prompt-area {
-    width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: var(--prompt-input-bg);
 }
 
-.prompt-area input[type="text"] {
+.prompt-area textarea {
     width: 700px;
     height: 100%;
     font-size: 18px;
@@ -29,8 +32,10 @@
     border-radius: 10px 0 0 10px;
     border: none;
     outline: none;
-    background-color: var(--prompt-input-bg);
+    resize: none;
+    background: none;
     color: var(--text-color);
+    overflow: hidden;
     &::placeholder {
         color: var(--icon-color);
     }
@@ -49,6 +54,11 @@
     font-size: 40px;
     color: var(--icon-color);
     cursor: pointer;
+    visibility: hidden;
+}
+
+.prompt-area textarea:valid ~ .btn fa-icon{
+    visibility: visible;
 }
 
 .prompt-footer {
@@ -63,4 +73,16 @@
     font-size: 16px;
     margin: 0;
     padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .prompt-area textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width: 720px) {
+    .prompt-area textarea {
+        width: 250px;
+    }
 }

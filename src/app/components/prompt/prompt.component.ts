@@ -19,7 +19,7 @@ export class PromptComponent implements OnInit {
     }
 
     sendMessage() {
-      var message = (<HTMLInputElement>document.getElementById("input")).value;
+      var message = (<HTMLInputElement>document.getElementById("input")).value.trim();
       (<HTMLInputElement>document.getElementById("input")).value = "";
       this.promptService.sendMessage(message); 
     }

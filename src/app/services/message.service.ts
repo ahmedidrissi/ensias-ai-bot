@@ -11,6 +11,6 @@ export class MessageService implements OnInit {
   }
 
   copyMessage(content: string) {
-    console.log(content);
+    navigator.clipboard.writeText(content);
   }
 }

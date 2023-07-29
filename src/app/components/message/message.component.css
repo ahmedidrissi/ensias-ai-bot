@@ -19,6 +19,9 @@
     gap: 10px;
 }
 
+.message .message-avatar {
+    align-self: flex-start;
+}
 .message .message-avatar img {
     width: 35px;
     height: 35px;
@@ -36,7 +39,7 @@
     color: var(--icon-color);
     cursor: pointer;
 }
-.message-outgoing .message-copy fa-icon {
+.message-outgoing .message-copy fa-icon, .message-incoming:has(.typing-animation) .message-copy fa-icon{
     visibility: hidden;
 }
 

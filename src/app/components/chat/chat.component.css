@@ -1,9 +1,3 @@
-/* webkit scroll */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-
 .chat-container {
     overflow-y: auto;
     height: 100%;

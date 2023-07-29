@@ -1,12 +1,15 @@
 <div class="prompt-container">
     <div class="prompt-area">
-        <input
-            id="input"
-            type="text"
-            class="input"
-            placeholder="Type your message here..."
-            (keyup.enter)="sendMessage()"
-        />
+        <textarea 
+            (keyup.enter)="sendMessage()" 
+            id="input" 
+            class="input" 
+            name="input" 
+            cols="30" 
+            rows="10" 
+            placeholder="Type your message here..." 
+            required
+        ></textarea>
         <div class="btn">
             <fa-icon 
                 [icon]="faTelegram"
