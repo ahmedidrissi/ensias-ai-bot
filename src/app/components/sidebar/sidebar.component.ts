@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTimes, faPlus, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPlus, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,6 +11,13 @@ export class SidebarComponent implements OnInit {
   faTimes = faTimes;
   faPlus = faPlus;
   faBars = faBars;
+  faUser = faUser;
+
+  chats: String[] = [
+    "Chat 1",
+    "Chat 2",
+    "Chat 3",
+  ];
 
   constructor() { }
 
