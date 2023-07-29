@@ -12,13 +12,15 @@
   --icon-color: #ACACBE;
   --icon-hover-bg: #5b5e71;
   --placeholder-color: #cccccc;
-  --main-bg-color: #2C2C3A;
+  --main-bg-color: #343541;
   --outgoing-message-bg: #343541;
   --incoming-message-bg: #444654;
   --outgoing-message-border: #343541;
   --incoming-message-border: #444654;
   --prompt-bg: #373747;
+  --prompt-bg-transparent: rgba(55, 55, 71, 0.3); 
   --prompt-input-bg: #434354;
+  --sidebar-bg: #1d1d27;
 }
 
 ::-webkit-scrollbar {
