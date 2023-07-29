@@ -7,13 +7,17 @@ import { ChatComponent } from './components/chat/chat.component';
 import { MessageComponent } from './components/message/message.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PromptComponent } from './components/prompt/prompt.component';
+import { HomeComponent } from './components/home/home.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
     MessageComponent,
-    PromptComponent
+    PromptComponent,
+    HomeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
