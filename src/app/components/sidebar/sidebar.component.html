@@ -23,4 +23,14 @@
             </fa-icon>
         </div>
     </div>
+    <div class="sidebar-body">
+        <div class="chat" *ngFor="let chat of chats">
+            <fa-icon
+                class="chat-icon"
+                [icon]="faUser"
+            >
+            </fa-icon>
+            <h5>{{chat}}</h5>
+        </div>
+    </div>
 </div>

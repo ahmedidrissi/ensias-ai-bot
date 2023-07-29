@@ -18,8 +18,6 @@
     background-color: var(--sidebar-bg);
 }
 
-
-
 .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -51,6 +49,27 @@
 }
 .sidebar-header .close:hover {
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.sidebar-body .chat {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
 }
 
 @media (max-width: 992px) {
