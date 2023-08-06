@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ChatService } from '../../services/chat.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { Message } from '../message/Message';
-import { map } from 'rxjs';
 
 @Component({
   selector: 'app-chat',
@@ -9,15 +7,10 @@ import { map } from 'rxjs';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit{
+  
+  @Input() messages: Message[] = [];
 
-  constructor(
-    public chatService: ChatService
-  ) { }
+  constructor() { }
 
-  ngOnInit() {
-    let messages = localStorage.getItem('messages');
-    if (messages) {
-      this.chatService.messages = JSON.parse(messages);
-    }
-  };
+  ngOnInit() { };
 }
