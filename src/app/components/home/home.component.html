@@ -1,7 +1,7 @@
 <div class="container">
     <app-sidebar (onOpenChat)="openChat($event)" (onOpenNewChat)="openNewChat()" [names]="names"></app-sidebar>
     <div class="chat-container">
-        <app-chat [messages]="messages" ></app-chat>
+        <app-chat [messages]="currentMessages" ></app-chat>
         <app-prompt (btnClick)="sendMessage()"></app-prompt>
     </div>
 </div>
