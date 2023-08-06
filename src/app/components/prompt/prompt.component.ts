@@ -16,7 +16,7 @@ export class PromptComponent implements OnInit {
     ngOnInit() {
     }
 
-    onClick() {
+    sendMessage() {
       this.btnClick.emit();
     }
 }
