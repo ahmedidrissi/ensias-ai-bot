@@ -24,13 +24,13 @@
         </div>
     </div>
     <div class="sidebar-body">
-        <div class="chat" *ngFor="let chat of chats">
+        <div class="chat" *ngFor="let name of names" (click)="openChat(name)">
             <fa-icon
                 class="chat-icon"
                 [icon]="faUser"
             >
             </fa-icon>
-            <h5>{{chat}}</h5>
+            <h5>{{name}}</h5>
         </div>
     </div>
 </div>
