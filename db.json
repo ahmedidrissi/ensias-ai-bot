@@ -1,6 +1,7 @@
 {
     "chats": [
         { 
+            "id": 1,
             "name": "chat 1", 
             "messages": [
                 {
@@ -20,6 +21,7 @@
             ]
         },
         { 
+            "id": 2,
             "name": "chat 2", 
             "messages": [
                 {
