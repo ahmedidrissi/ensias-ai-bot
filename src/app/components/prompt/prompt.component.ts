@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { PromptService } from '../../services/prompt.service';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -9,18 +8,15 @@ import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 })
 export class PromptComponent implements OnInit {
 
+    @Output() btnClick = new EventEmitter();
     faTelegram = faTelegramPlane;
   
-    constructor(
-      public promptService: PromptService
-    ) { }
+    constructor() { }
   
     ngOnInit() {
     }
 
-    sendMessage() {
-      var message = (<HTMLInputElement>document.getElementById("input")).value.trim();
-      (<HTMLInputElement>document.getElementById("input")).value = "";
-      this.promptService.sendMessage(message); 
+    onClick() {
+      this.btnClick.emit();
     }
 }

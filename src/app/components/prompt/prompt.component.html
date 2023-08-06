@@ -1,7 +1,7 @@
 <div id="prompt" class="prompt-container">
     <div class="prompt-area">
         <textarea 
-            (keyup.enter)="sendMessage()" 
+            (keyup.enter)="onClick()" 
             id="input" 
             class="input" 
             name="input" 
@@ -13,7 +13,7 @@
         <div class="btn">
             <fa-icon 
                 [icon]="faTelegram"
-                (click)="sendMessage()"
+                (click)="onClick()"
             ></fa-icon>
         </div>
     </div>
