@@ -36,8 +36,7 @@ export class HomeComponent implements OnInit {
       this.chats = chats;
       this.names = this.chats.map(chat => chat.name);
       this.currentChat = chats[0];
-      this.currentName = this.names[0];
-      this.openChat(this.currentName);
+      this.openChat(this.names[0]);
     });
   }
 
@@ -73,7 +72,19 @@ export class HomeComponent implements OnInit {
   }
 
   openNewChat() {
-
+    let newId = this.chats.length + 1;
+    let newName = 'chat ' + newId;
+    let newChat: Chat = {
+      id: newId,
+      name: newName,
+      messages: []
+    };
+    this.homeService.addChat(newChat).subscribe(()=>{
+      this.chats.push(newChat);
+      this.names.push(newChat.name);
+      this.currentChat = newChat;
+      this.openChat(newChat.name);
+    });
   }
 
   saveChat() {   
@@ -88,6 +99,8 @@ export class HomeComponent implements OnInit {
     this.homeService.deleteChat(chat).subscribe(() => {
       this.chats = this.chats.filter(chat => chat.name != chatName);
       this.names = this.chats.map(chat => chat.name);
+      this.currentChat = this.chats[0];
+      this.openChat(this.names[0]);
     });
   }
 }

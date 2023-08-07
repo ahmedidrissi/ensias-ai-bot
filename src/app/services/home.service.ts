@@ -26,10 +26,7 @@ export class HomeService {
   }
 
   addChat(chat: Chat): Observable<Chat> {
-    const id = chat.id;
-    const url = `${this.apiUrl}/${id}`;
-
-    return this.http.post<Chat>(url, chat);
+    return this.http.post<Chat>(this.apiUrl, chat);
   }
 
   deleteChat(chat: Chat): Observable<Chat> {
