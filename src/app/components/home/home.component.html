@@ -1,5 +1,5 @@
 <div class="container">
-    <app-sidebar (onOpenChat)="openChat($event)" (onOpenNewChat)="openNewChat()" [names]="names"></app-sidebar>
+    <app-sidebar (onOpenChat)="openChat($event)" (onOpenNewChat)="openNewChat()" (onDeleteChat)="deleteChat($event)" [names]="names"></app-sidebar>
     <div class="chat-container">
         <app-chat [messages]="currentMessages" ></app-chat>
         <app-prompt (btnClick)="sendMessage()"></app-prompt>

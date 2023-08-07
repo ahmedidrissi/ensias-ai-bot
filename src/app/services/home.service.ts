@@ -18,16 +18,22 @@ export class HomeService {
     return this.http.get<Chat[]>(this.apiUrl);
   }
 
-  updateChat(chat: Chat): Observable<any> {
-    return this.http.put(this.apiUrl, chat);
+  updateChat(chat: Chat): Observable<Chat> {
+    const id = chat.id
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.put<Chat>(url, chat);
   }
 
   addChat(chat: Chat): Observable<Chat> {
-    return this.http.post<Chat>(this.apiUrl, chat);
+    const id = chat.id;
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.post<Chat>(url, chat);
   }
 
-  deleteChat(chat: Chat | number): Observable<Chat> {
-    const id = typeof chat === 'number' ? chat : chat.id;
+  deleteChat(chat: Chat): Observable<Chat> {
+    const id = chat.id;
     const url = `${this.apiUrl}/${id}`;
 
     return this.http.delete<Chat>(url);

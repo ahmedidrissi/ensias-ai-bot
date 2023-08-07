@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
-import { faTimes, faPlus, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPlus, faBars, faUser, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,10 +11,13 @@ export class SidebarComponent implements OnInit {
   @Input() names: string[] = [];
   @Output() onOpenChat = new EventEmitter<string>();
   @Output() onOpenNewChat = new EventEmitter();
+  @Output() onDeleteChat = new EventEmitter<string>();
+
   faTimes = faTimes;
   faPlus = faPlus;
   faBars = faBars;
   faUser = faUser;
+  faTrash = faTrash;
 
   constructor() { }
 
@@ -46,6 +49,10 @@ export class SidebarComponent implements OnInit {
 
   openChat(chatName: string) {
     this.onOpenChat.emit(chatName);
+  }
+
+  deleteChat(chatName: string) {
+    this.onDeleteChat.emit(chatName);
   }
 
 }

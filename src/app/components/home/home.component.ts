@@ -76,10 +76,18 @@ export class HomeComponent implements OnInit {
 
   }
 
-  saveChat() {
-    this.currentChat.messages = this.currentMessages;
-    console.log(this.currentChat);
-    
-    this.homeService.updateChat(this.currentChat).subscribe();
+  saveChat() {   
+    this.homeService.updateChat(this.currentChat).subscribe(() => {
+      this.currentChat.messages = this.currentMessages; 
+    });
+  }
+  
+  deleteChat(chatName: string) {
+    const chat = this.chats.find(chat => chat.name == chatName)!;
+
+    this.homeService.deleteChat(chat).subscribe(() => {
+      this.chats = this.chats.filter(chat => chat.name != chatName);
+      this.names = this.chats.map(chat => chat.name);
+    });
   }
 }
