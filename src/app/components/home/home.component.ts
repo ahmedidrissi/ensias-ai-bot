@@ -67,8 +67,9 @@ export class HomeComponent implements OnInit {
   }
 
   openChat(chatName: string) {
+    this.currentChat = this.chats.find(chat => chat.name == chatName)!;
     this.currentName = chatName;
-    this.currentMessages = this.chats.find(chat => chat.name == chatName)!.messages;
+    this.currentMessages = this.currentChat.messages;
   }
 
   openNewChat() {

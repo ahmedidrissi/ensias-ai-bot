@@ -24,21 +24,26 @@
         </div>
     </div>
     <div class="sidebar-body">
-        <div class="chat" *ngFor="let name of names" (click)="openChat(name)">
-            <div class="chat-details">
-                <fa-icon
-                    class="chat-icon"
-                    [icon]="faUser"
-                >
-                </fa-icon>
-                <h5>{{name}}</h5>
-            </div>
+        <div 
+            class="chat"
+            *ngFor="let name of names" 
+            [ngClass]="{'active': name === currentName}"
+            (click)="openChat(name)"
+        >
+        <div class="chat-details">
             <fa-icon
-                class="delete-icon"
-                [icon]="faTrash"
-                (click)="deleteChat(name)"
+                class="chat-icon"
+                [icon]="faUser"
             >
             </fa-icon>
+            <h5>{{name}}</h5>
+        </div>
+        <fa-icon
+            class="delete-icon"
+            [icon]="faTrash"
+            (click)="deleteChat(name)"
+        >
+        </fa-icon>
         </div>
     </div>
 </div>

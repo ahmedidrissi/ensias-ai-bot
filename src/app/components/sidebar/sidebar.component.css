@@ -16,6 +16,7 @@
     width: 260px;
     height: 100vh;
     background-color: var(--sidebar-bg);
+    overflow-y: scroll;
 }
 
 .sidebar-header {
@@ -71,6 +72,10 @@
     cursor: pointer;
     width: 100%;
 }
+.sidebar-body .chat.active {
+    background: var(--sidebar-chat-bg);
+}
+
 .sidebar-body .chat .chat-details {
     display: flex;
     justify-content: flex-start;

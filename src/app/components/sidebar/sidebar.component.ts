@@ -9,6 +9,7 @@ import { faTimes, faPlus, faBars, faUser, faTrash } from '@fortawesome/free-soli
 export class SidebarComponent implements OnInit {
   
   @Input() names: string[] = [];
+  @Input() currentName: string = "";
   @Output() onOpenChat = new EventEmitter<string>();
   @Output() onOpenNewChat = new EventEmitter();
   @Output() onDeleteChat = new EventEmitter<string>();

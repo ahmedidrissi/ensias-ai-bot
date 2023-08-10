@@ -21,6 +21,7 @@
   --prompt-bg-transparent: rgba(55, 55, 71, 0.3); 
   --prompt-input-bg: #434354;
   --sidebar-bg: #1d1d27;
+  --sidebar-chat-bg: rgba(42, 42, 55, 0.6);
 }
 
 ::-webkit-scrollbar {
