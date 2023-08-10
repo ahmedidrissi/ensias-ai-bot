@@ -53,11 +53,11 @@
 }
 
 .sidebar-body-container {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 80vh;
 }
 .sidebar-body-container::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
 }
 .sidebar-body-container::-webkit-scrollbar-thumb {
     background-color: var(--icon-hover-bg);

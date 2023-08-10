@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   currentMessages: Message[] = [];
   typingDots: Message = new Message(
     'incoming',
-    'assets/chatgpt-icon.svg',
+    'assets/hassan.png',
     'Bot',
     '',
     true
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
         this.currentMessages.pop();
         this.currentMessages.push(new Message(
           'incoming',
-          'assets/chatgpt-icon.svg',
+          'assets/hassan.png',
           'Bot',
           'Hello, this is a bot message!'
         ));
