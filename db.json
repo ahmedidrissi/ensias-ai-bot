@@ -8,29 +8,15 @@
           "type": "outgoing",
           "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
           "username": "User",
-          "content": "hi",
+          "content": "Waaaa Hassan",
           "typing": false
         },
         {
           "type": "incoming",
           "avatar": "assets/hassan.png",
           "username": "Bot",
-          "content": "Hello, this is a bot message!",
-          "typing": false
-        },
-        {
-          "type": "outgoing",
-          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
-          "username": "User",
-          "content": "hellooo",
-          "typing": false
-        },
-        {
-          "type": "incoming",
-          "avatar": "assets/hassan.png",
-          "username": "Bot",
-          "content": "Hello, this is a bot message!",
-          "typing": false
+          "content": "",
+          "typing": true
         }
       ]
     }

@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   currentMessages: Message[] = [];
   typingDots: Message = new Message(
     'incoming',
-    'assets/hassan.png',
+    'assets/HassanGPT.png',
     'Bot',
     '',
     true
@@ -47,26 +47,30 @@ export class HomeComponent implements OnInit {
   sendMessage() {
     var message = (<HTMLInputElement>document.getElementById("input")).value.trim();
     (<HTMLInputElement>document.getElementById("input")).value = "";
+
     if (message.length > 1) {
       this.currentMessages.push(new Message(
         'outgoing',
         'https://img.icons8.com/material-rounded/35/ffffff/user.png',
         'User',
         message
-      ));
+      )); 
+
       setTimeout(() => {
         this.currentMessages.push(this.typingDots);
       }, 1000);
       setTimeout(() => {
-        this.currentMessages.pop();
-        this.currentMessages.push(new Message(
-          'incoming',
-          'assets/hassan.png',
-          'Bot',
-          'Hello, this is a bot message!'
-        ));
+        this.homeService.getResponse(message).subscribe(response => {
+          this.currentMessages.pop();
+          this.currentMessages.push(new Message(
+            'incoming',
+            'assets/HassanGPT.png',
+            'Bot',
+            response[0].text
+          ));
+        });
         this.saveChat();
-      }, 2000);
+      }, 1000);
     }
   }
 
@@ -105,7 +109,12 @@ export class HomeComponent implements OnInit {
       this.chats = this.chats.filter(chat => chat.name != chatName);
       this.names = this.chats.map(chat => chat.name);
       this.currentChat = this.chats[0];
-      this.openChat(this.names[0]);
+      if (this.currentChat) {
+        this.openChat(this.currentChat.name);
+      } else {
+        this.currentName = "";
+        this.currentMessages = [];
+      }
     });
   }
 }

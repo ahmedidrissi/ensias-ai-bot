@@ -9,6 +9,7 @@ import { Chat } from '../Chat';
 export class HomeService {
 
   private apiUrl = 'http://localhost:3000/chats';
+  private rasaUrl = 'http://localhost:5005/webhooks/rest/webhook';
 
   constructor(
     private http: HttpClient
@@ -36,5 +37,13 @@ export class HomeService {
     return this.http.delete<Chat>(url);
   }
 
+  getResponse(message: string): Observable<any> {
+    const body = {
+      "sender": "user",
+      "message": message
+    }
+
+    return this.http.post<any>(this.rasaUrl, body);
+  }
 
 }
