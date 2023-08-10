@@ -17,8 +17,162 @@
           "username": "Bot",
           "content": "Hello, this is a bot message!",
           "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "hi",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "hooo",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "hiiiiiiii",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "booooo",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "meooooow",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "miiiiiiiiiiiiiiiiiiii",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/chatgpt-icon.svg",
+          "username": "Bot",
+          "content": "Hello, this is a bot message!",
+          "typing": false
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "chat 2",
+      "messages": []
+    },
+    {
+      "id": 3,
+      "name": "chat 3",
+      "messages": []
+    },
+    {
+      "id": 4,
+      "name": "chat 4",
+      "messages": []
+    },
+    {
+      "id": 5,
+      "name": "chat 5",
+      "messages": []
+    },
+    {
+      "id": 6,
+      "name": "chat 6",
+      "messages": []
+    },
+    {
+      "id": 7,
+      "name": "chat 7",
+      "messages": []
+    },
+    {
+      "id": 8,
+      "name": "chat 8",
+      "messages": []
+    },
+    {
+      "id": 9,
+      "name": "chat 9",
+      "messages": []
+    },
+    {
+      "id": 10,
+      "name": "chat 10",
+      "messages": []
+    },
+    {
+      "id": 11,
+      "name": "chat 11",
+      "messages": []
+    },
+    {
+      "id": 12,
+      "name": "chat 12",
+      "messages": []
+    },
+    {
+      "id": 13,
+      "name": "chat 13",
+      "messages": []
+    },
+    {
+      "id": 14,
+      "name": "chat 14",
+      "messages": []
+    },
+    {
+      "id": 15,
+      "name": "chat 15",
+      "messages": []
     }
   ]
 }
