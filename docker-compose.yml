@@ -7,6 +7,6 @@ services:
       - ./bot:/app
     command: run -m bot/models --enable-api --cors "*" --debug
   hassan:
-    image: eaic/hassan-gpt:1.0
+    image: eaic/hassan-gpt:latest
     ports:
       - 1234:1234
