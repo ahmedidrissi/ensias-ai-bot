@@ -16,18 +16,6 @@
     width: 260px;
     height: 100vh;
     background-color: var(--sidebar-bg);
-    overflow-y: scroll;
-}
-
-.sidebar-container::-webkit-scrollbar {
-    width: 5px;
-}
-.sidebar-container::-webkit-scrollbar-thumb {
-    background-color: var(--icon-hover-bg);
-    border-radius: 5px;
-}
-.sidebar-container::-webkit-scrollbar-track {
-    background-color: var(--sidebar-bg);
 }
 
 .sidebar-header {
@@ -36,6 +24,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-header .new-chat {
@@ -61,6 +50,21 @@
 }
 .sidebar-header .close:hover {
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-body-container {
+    overflow-y: scroll;
+    height: 80vh;
+}
+.sidebar-body-container::-webkit-scrollbar {
+    width: 5px;
+}
+.sidebar-body-container::-webkit-scrollbar-thumb {
+    background-color: var(--icon-hover-bg);
+    border-radius: 5px;
+}
+.sidebar-body-container::-webkit-scrollbar-track {
+    background-color: var(--sidebar-bg);
 }
 
 .sidebar-body {
@@ -92,6 +96,31 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+}
+
+.sidebar-footer {
+    height: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar-footer .user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.sidebar-footer .user-profile-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar-footer .user-profile-details img {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 992px) {

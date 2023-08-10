@@ -3,6 +3,7 @@
         (onOpenChat)="openChat($event)" 
         (onOpenNewChat)="openNewChat()" 
         (onDeleteChat)="deleteChat($event)" 
+        [userInfos]="userInfos"
         [names]="names"
         currentName="{{currentName}}"
     ></app-sidebar>

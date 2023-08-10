@@ -23,8 +23,9 @@
             </fa-icon>
         </div>
     </div>
-    <div class="sidebar-body">
-        <div 
+    <div class="sidebar-body-container">
+        <div class="sidebar-body">
+            <div 
             class="chat"
             *ngFor="let name of names" 
             [ngClass]="{'active': name === currentName}"
@@ -44,6 +45,23 @@
             (click)="deleteChat(name)"
         >
         </fa-icon>
+        </div>
+        </div>
+    </div>
+    <div class="sidebar-footer">
+        <!-- user -->
+        <div class="user-profile">
+            <div class="user-profile-details">
+                <div class="user-avatar">
+                    <img src="{{userInfos.avatar}}" alt="{{userInfos.name}}">
+                </div>
+                <h5>{{userInfos.name}}</h5>
+            </div>
+            <fa-icon
+                class="settings-icon"
+                [icon]="faCog"
+            >
+            </fa-icon>
         </div>
     </div>
 </div>

@@ -10,6 +10,10 @@ import { HomeService } from '../../services/home.service';
 })
 export class HomeComponent implements OnInit {
 
+  userInfos: any = {
+    name: 'Ahmed Idrissi',
+    avatar: 'https://img.icons8.com/material-rounded/35/ffffff/user.png'
+  };
   chats: Chat[] = [];
   names : string[] = [];
   currentChat: Chat = {
