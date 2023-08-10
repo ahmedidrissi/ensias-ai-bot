@@ -1,0 +1,12 @@
+services:
+  rasa:
+    image: rasa/rasa:3.6.4
+    ports:
+      - 5005:5005
+    volumes:
+      - ./hassan-gpt:/app
+    command: run -m bestafrik-chatbot/models --enable-api --cors "*" --debug
+  front:
+    image: eaic/hassan-gpt:1.0
+    ports:
+      - 8080:80
