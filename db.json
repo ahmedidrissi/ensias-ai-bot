@@ -3,7 +3,22 @@
     {
       "id": 1,
       "name": "chat 1",
-      "messages": []
+      "messages": [
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "hi",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/HassanGPT.png",
+          "username": "Bot",
+          "content": "",
+          "typing": true
+        }
+      ]
     }
   ]
 }

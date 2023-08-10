@@ -1,7 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Chat } from '../Chat';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  })
+};
 
 @Injectable({
   providedIn: 'root'
@@ -37,13 +43,12 @@ export class HomeService {
     return this.http.delete<Chat>(url);
   }
 
-  getResponse(message: string): Observable<any> {
-    const body = {
-      "sender": "user",
-      "message": message
-    }
-
-    return this.http.post<any>(this.rasaUrl, body);
+  getResponse(message: String): Observable<any> {
+    return this.http.post(
+      `${this.rasaUrl}`, 
+      { 'sender' : 'user', 'message' : message }, 
+      httpOptions
+      );
   }
 
 }
