@@ -10,6 +10,9 @@ intents:
   - bot_challenge
 
 responses:
+  utter_call_hassan:
+  - text: "wa n3am"
+
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -27,7 +30,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by ENSIAS AI Club."
 
 session_config:
   session_expiration_time: 60
