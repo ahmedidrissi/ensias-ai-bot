@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Message } from '../message/Message';
 import { Chat } from '../../Chat';
 import { HomeService } from '../../services/home.service';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -53,7 +54,8 @@ export class HomeComponent implements OnInit {
         'outgoing',
         'https://img.icons8.com/material-rounded/35/ffffff/user.png',
         'User',
-        message
+        message,
+        false
       )); 
 
       setTimeout(() => {
@@ -69,8 +71,8 @@ export class HomeComponent implements OnInit {
             response[0].text,
             false
           ));
+          this.saveChat();
         });
-        this.saveChat();
       }, 1000);
     }
   }
