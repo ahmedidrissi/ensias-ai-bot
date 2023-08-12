@@ -66,7 +66,8 @@ export class HomeComponent implements OnInit {
             'incoming',
             'assets/HassanGPT.png',
             'Bot',
-            response[0].text
+            response[0].text,
+            false
           ));
         });
         this.saveChat();
