@@ -3,10 +3,6 @@ version: "3.1"
 rules:
 
 # General queries :
-- rule: Say wa n3am anytime the user call hassan
-  steps:
-  - intent: call_hassan
-  - action: utter_call_hassan
 - rule: Say hello anytime the user says hello
   steps:
   - intent: greet
@@ -65,10 +61,6 @@ rules:
   steps:
   - intent: about
   - action: utter_about
-- rule: say location anytime user asks about location
-  steps:
-  - intent: location
-  - action: utter_location
 - rule: say mission anytime user asks about mission
   steps:
   - intent: mission

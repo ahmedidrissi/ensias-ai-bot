@@ -8,14 +8,42 @@
           "type": "outgoing",
           "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
           "username": "User",
-          "content": "hi",
+          "content": "Hey there, what's the buzz about ENSIAS AI Club?",
           "typing": false
         },
         {
           "type": "incoming",
           "avatar": "assets/HassanGPT.png",
           "username": "Bot",
-          "content": "Hey! How are you?",
+          "content": "Well, imagine a place where students are turning science fiction into reality. A place where algorithms meet creativity, and data turns into innovation. Welcome to ENSIAS AI Club, where our motto is 'Transforming Tomorrow, Today.",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "and what's your mission ?",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/HassanGPT.png",
+          "username": "Bot",
+          "content": "Picture this: We're the dreamers, the thinkers, and the doers. We harness the power of artificial intelligence to create solutions that change lives. Whether it's using AI to tackle climate change or building intelligent chatbots like me, ENSIAS AI Club is where the future is being built.",
+          "typing": false
+        },
+        {
+          "type": "outgoing",
+          "avatar": "https://img.icons8.com/material-rounded/35/ffffff/user.png",
+          "username": "User",
+          "content": "what's your motivation?",
+          "typing": false
+        },
+        {
+          "type": "incoming",
+          "avatar": "assets/HassanGPT.png",
+          "username": "Bot",
+          "content": "ENSIAS AI Club is motivated by the desire to make Artificial Intelligence accessible to all students and to help them develop their skills in this field.",
           "typing": false
         }
       ]

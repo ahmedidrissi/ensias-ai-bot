@@ -3,10 +3,6 @@ version: "3.1"
 nlu:
 
 # General queries :
-- intent: call_hassan
-  examples: |
-    - wa hassan
-    - hassan
 - intent: greet
   examples: |
     - hi
@@ -165,13 +161,7 @@ nlu:
   examples: |
     - tell me about the club
     - tell me about ensias ai club
-- intent: location
-  examples: |
-    - where is the club
-    - where is ensias ai club 
-    - where the club is located
-    - where ensias ai club is located 
-    - where it is located
+    - Hey there, what's the buzz about ENSIAS AI Club?
 - intent: mission
   examples: |
     - what is the mission of the club
@@ -185,14 +175,14 @@ nlu:
     - what is the motivation of the club
     - what's the motivation of ensias ai club
     - what is its motivation
+- intent: team
   examples: |
-    - how many cells does the club have
-    - how many cells does ensias ai club have
-    - how many cells does it have
-    - how many cells are there in the club
-    - how many cells are there in ensias ai club
-    - how many cells are there
-  
+    - tell me about the piloting team of the club
+    - tell me about the piloting team of ensias ai club
+    - tell me about its piloting team
+    - piloting team
+
+
 # About the cells :
 - intent: cells
   examples: |

@@ -3,3 +3,4 @@ tests
 models/
 .config/
 .keras/
+.rasa/
