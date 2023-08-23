@@ -8,15 +8,25 @@ export class SpeechService {
   private synthesis = window.speechSynthesis;
   private utterance = new SpeechSynthesisUtterance();
   private voices: SpeechSynthesisVoice[] = [];
+  
 
-  constructor() {
-    this.synthesis.cancel();
-    this.voices = this.synthesis.getVoices();
-    this.utterance.voice = this.voices[1];
-  }
+  constructor() { }
 
   speak(message: string) {
-    this.utterance.text = message;
-    this.synthesis.speak(this.utterance);
+    if (this.synthesis.speaking) {
+      this.synthesis.cancel();
+    }
+    if (message !== '') {
+      this.utterance.text = message;
+      this.synthesis.speak(this.utterance);
+    }
   }
+
+  setVoice(): void {
+    this.voices = speechSynthesis.getVoices();
+    console.log(this.voices);
+    
+    this.utterance.voice = this.voices[2];
+  }
+
 }

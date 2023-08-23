@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Message } from '../message/Message';
 import { Chat } from '../../Chat';
 import { HomeService } from '../../services/home.service';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { SpeechService } from '../../services/speech.service';
 
 @Component({
   selector: 'app-home',
@@ -33,7 +33,8 @@ export class HomeComponent implements OnInit {
   );
 
   constructor(
-    private homeService: HomeService
+    private homeService: HomeService,
+    private speechService: SpeechService
   ) {}
 
   ngOnInit(): void {
@@ -56,7 +57,11 @@ export class HomeComponent implements OnInit {
         'User',
         message,
         false
-      )); 
+      ));  
+      
+      
+      this.speechService.setVoice();
+      
 
       setTimeout(() => {
         this.currentMessages.push(this.typingDots);
@@ -71,6 +76,7 @@ export class HomeComponent implements OnInit {
             response[0].text,
             false
           ));
+          this.speechService.speak(response[0].text);
           this.saveChat();
         });
       }, 1000);

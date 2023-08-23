@@ -74,12 +74,11 @@ responses:
   utter_motivation:
   - text: "ENSIAS AI Club is motivated by the desire to make Artificial Intelligence accessible to all students and to help them develop their skills in this field."
   utter_team:
-  # the President, the Vice President, Training Cell respos, DATA Cell respo, MLops Cell respo, Events Cell respos, Sponsoring cell respos, Media Cell respo, Design Cell respo ...
-  - text: "ENSIAS AI Club is managed by a team of 9 students:\n- The President Ahmed IDRISSI\n- The Vice President Ismail El Kamel\n- The Training Cell respos Adnane Majdoub and Adil Oubaoubo\n- The DATA Cell respo Ismail El Kamel\n- The MLops Cell respo Asmae Karmouchi\n- The Events Cell respo Anas Saadi\n- The Sponsoring cell respos Fedwa Ouattalb and Adil Oubaoubo\n- The Media Cell respo Aya Moujtahid an\n- The Design Cell respo Zakaria Baou."
+  - text: "ENSIAS AI Club is managed by a team of 9 students:\n- The President Ahmed Idrissi\n- The Vice President Ismail El Kamel\n- The Training Cell respos Adnane Majdoub and Adil Oubaoubo\n- The DATA Cell respo Ismail El Kamel\n- The MLops Cell respo Asmae Karmouchi\n- The Events Cell respo Anas Saadi\n- The Sponsoring cell respos Fedwa Ouattalb and Adil Oubaoubo\n- The Media Cell respo Aya Moujtahid\n- The Design Cell respo Zakaria Baou."
 
   # About the cells :
   utter_cells:
-  - text: "ENSIAS AI Club has 7 cells:\n- The Training Cell\n- The DATA Cell\n- The MLops Cell\n- The Events Cell\n- The Sponsoring Cell\n- The Media Cell an\n- The Design Cell."
+  - text: "ENSIAS AI Club has 7 cells:\n- The Training Cell\n- The DATA Cell\n- The MLops Cell\n- The Events Cell\n- The Sponsoring Cell\n- The Media Cell\n- The Design Cell."
 
   # About the events :
   utter_events:
