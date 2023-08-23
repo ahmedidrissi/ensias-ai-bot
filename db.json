@@ -15,8 +15,8 @@
           "type": "incoming",
           "avatar": "assets/HassanGPT.png",
           "username": "Bot",
-          "content": "",
-          "typing": true
+          "content": "Hey! How are you?",
+          "typing": false
         }
       ]
     }

@@ -2,22 +2,62 @@ version: "3.1"
 
 rules:
 
+# General queries :
 - rule: Say wa n3am anytime the user call hassan
   steps:
   - intent: call_hassan
   - action: utter_call_hassan
-
-- rule: Say hello anytime the user says goodbye
+- rule: Say hello anytime the user says hello
   steps:
   - intent: greet
   - action: utter_greet
-
-- rule: Say goodbye anytime the user says goodbye
+- rule: Say carry on anytime the user says great
+  steps:
+  - intent: mood_happy
+  - action: utter_happy
+- rule: Say sorry anytime the user says unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+- rule: offer help if user asks
+  steps:
+  - intent: help
+  - action: utter_help
+- rule: Say welcome when user say thanks
+  steps:
+  - intent: thanks
+  - action: utter_welcome
+- rule: say I am a bot anytime user challenges the bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+- rule: say name anytime user asks for name
+  steps:
+  - intent: bot_name
+  - action: utter_bot_name
+- rule: say age anytime user asks for age
+  steps:
+  - intent: bot_age
+  - action: utter_bot_age
+- rule: say ok anytime user affirms
+  steps:
+  - intent: affirm
+  - action: utter_ok
+- rule: say ok anytime user denies
+  steps:
+  - intent: deny
+  - action: utter_ok
+- rule: say stop anytime user says stop
+  steps:
+  - intent: stop
+  - action: utter_stop
+- rule: say goodbye anytime user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: say out of scope anytime user says something out of scope
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+  

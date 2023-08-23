@@ -1,37 +1,54 @@
 version: "3.1"
 
 intents:
+
+  # General queries :
   - call_hassan
   - greet
-  - goodbye
+  - mood_happy
+  - mood_unhappy
+  - help
+  - thanks
+  - bot_challenge
+  - bot_name
+  - bot_age
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - stop
+  - goodbye
+  - out_of_scope
 
 responses:
+
+  # General queries :
   utter_call_hassan:
   - text: "wa n3am"
-
   utter_greet:
   - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
   utter_happy:
   - text: "Great, carry on!"
-
+  utter_unhappy:
+  - text: "Sorry to hear that."
+  utter_help:
+  - text: "Sure! How can I help?"
+  utter_welcome:
+  - text: "You're welcome!"
+  utter_bot_challenge:
+  - text: "I am a bot created by ENSIAS AI Club. I am here to answer your questions about the club."
+  utter_bot_name:
+  - text: "My name is HassanGPT."
+  utter_bot_age:
+  - text: "I am 1 year old."
+  utter_ok:
+  - text: "Ok."
+  utter_stop:
+  - text: "Ok, I will stop."
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye. Take care!"
+  utter_out_of_scope:
+  - text: "Sorry, I don't understand."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by ENSIAS AI Club."
+  
 
 session_config:
   session_expiration_time: 60

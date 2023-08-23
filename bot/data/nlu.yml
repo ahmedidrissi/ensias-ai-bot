@@ -2,56 +2,29 @@ version: "3.1"
 
 nlu:
 
+# General queries :
 - intent: call_hassan
   examples: |
     - wa hassan
     - hassan
-
 - intent: greet
   examples: |
+    - hi
     - hey
     - hello
-    - hi
+    - howdy
+    - sup
     - hello there
+    - good morning
+    - good evening
+    - moin
     - hey there
+    - let's go
     - hey dude
     - goodmorning
     - goodevening
     - good afternoon
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
+- intent: mood_happy
   examples: |
     - perfect
     - great
@@ -67,7 +40,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
+    - I'm good
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -84,10 +57,107 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
+- intent: help
+  examples: |
+    - Can you help me?
+    - I need help
+    - Assist me please
+    - Help
+    - help me
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks for your help!
+    - Thanks
+    - Thanks for the help
+    - ty
+    - thank you
 - intent: bot_challenge
   examples: |
+    - Who are you?
+    - What are you?
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are u?
+    - who are u
+- intent: bot_name
+  examples: |
+    - What's your name?
+    - What's your name
+    - Your name?
+    - Name?
+- intent: bot_age
+  examples: |
+    - What's your age?
+    - How old are you?
+    - Your age?
+    - Age?
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - affirm
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: stop
+  examples: |
+    - stop
+    - nevermind
+    - please stop
+    - i want to stop
+    - stop the form
+    - stop pls
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: out_of_scope
+  examples: |
+    - jhdkjdhksdkfa
+    - hahaha
+    - blablabla
+    - What's the weather like in Paris?
+    - Tell me a joke.
+    - Can you recommend a good restaurant in New York?
+    - How can I apply for a job at your company?
+    - What is the meaning of life?
+    - What is the capital of Australia?
+    - Can you book a flight for me?
+    - How do I fix my broken car engine?
+    - Can you help me with my math homework?
+    - What are the latest stock market trends?
+    - sdfhjklasdfsadf
+    - 1234567890
+    - asdfghjklqwerty
+    - Can you gibberish me with some zzyzx?
+    - What is the color of the number 7?
+    - How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+    - What is the sound of one hand clapping?
+    - Can you teleport me to Mars?
+    - Tell me the meaning of floccinaucinihilipilification.
+    - What is the secret to eternal youth and happiness?
+    - What is 2 + 2?
+    - Who's the US President?
+
+   
