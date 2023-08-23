@@ -60,4 +60,55 @@ rules:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
-  
+# About ENSIAS AI Club :
+- rule: say about ENSIAS AI Club anytime user asks about ENSIAS AI Club
+  steps:
+  - intent: about
+  - action: utter_about
+- rule: say location anytime user asks about location
+  steps:
+  - intent: location
+  - action: utter_location
+- rule: say mission anytime user asks about mission
+  steps:
+  - intent: mission
+  - action: utter_mission
+- rule: say motivation anytime user asks about motivation
+  steps:
+  - intent: motivation
+  - action: utter_motivation
+- rule: say team anytime user asks about team
+  steps:
+  - intent: team
+  - action: utter_team
+
+# About the cells :
+- rule: say cells respos anytime user asks about cells list
+  steps:
+  - intent: cells
+  - action: utter_cells
+
+# About the events :
+- rule: say events anytime user asks about events
+  steps:
+  - intent: events
+  - action: utter_events
+
+# About the projects :
+- rule: say projects anytime user asks about projects
+  steps:
+  - intent: projects
+  - action: utter_projects
+
+# About the trainings :
+- rule: say trainings anytime user asks about trainings
+  steps:
+  - intent: trainings
+  - action: utter_trainings
+
+# About the competitions :
+- rule: say competitions anytime user asks about competitions
+  steps:
+  - intent: competitions
+  - action: utter_competitions
+

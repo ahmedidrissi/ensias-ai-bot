@@ -160,4 +160,95 @@ nlu:
     - What is 2 + 2?
     - Who's the US President?
 
-   
+# About ENSIAS AI Club :
+- intent: about
+  examples: |
+    - tell me about the club
+    - tell me about ensias ai club
+- intent: location
+  examples: |
+    - where is the club
+    - where is ensias ai club 
+    - where the club is located
+    - where ensias ai club is located 
+    - where it is located
+- intent: mission
+  examples: |
+    - what is the mission of the club
+    - what's the mission of ensias ai club
+    - what is its mission
+    - tell me about the mission of the club
+    - tell me about the mission of ensias ai club
+    - tell me about its mission
+- intent: motivation
+  examples: |
+    - what is the motivation of the club
+    - what's the motivation of ensias ai club
+    - what is its motivation
+  examples: |
+    - how many cells does the club have
+    - how many cells does ensias ai club have
+    - how many cells does it have
+    - how many cells are there in the club
+    - how many cells are there in ensias ai club
+    - how many cells are there
+  
+# About the cells :
+- intent: cells
+  examples: |
+    - how many cells does the club have
+    - how many cells does ensias ai club have
+    - how many cells does it have
+    - how many cells are there in the club
+    - how many cells are there in ensias ai club
+    - how many cells are there
+    - tell me about the cells of the club
+    - tell me about the cells of ensias ai club
+    - tell me about its cells
+
+# About the events :
+- intent: events
+  examples: |
+    - what are the events of the club
+    - what are the events of ensias ai club
+    - what are their events
+    - what events does the club have
+    - what events does ensias ai club have
+    - what events do they have
+    - how many events does the club have
+    - tell me about their events
+    - their events?
+    - what about their events?
+
+# About the projects :
+- intent: projects
+  examples: |
+    - what are the projects of the club
+    - what are the projects of ensias ai club
+    - what are their projects
+    - what projects does the club have
+    - what projects does ensias ai club have
+    - what projects do they have
+    - how many projects does the club have
+    - tell me about their projects
+    - their projects?
+
+# About the workshops :
+- intent: trainings
+  examples: |
+    - tell me about their trainings sessions
+    - their trainings?
+    - what about their trainings sessions?
+
+# About the competitions :
+- intent: competitions
+  examples: |
+    - what are the competitions of the club
+    - what are the competitions of ensias ai club
+    - what are their competitions
+    - what competitions does the club have
+    - what competitions does ensias ai club have
+    - what competitions do they have
+    - how many competitions does the club have
+    - tell me about the competitions they have
+    - their competitions?

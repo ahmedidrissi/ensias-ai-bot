@@ -18,6 +18,28 @@ intents:
   - goodbye
   - out_of_scope
 
+  # About ENSIAS AI Club :
+  - about
+  - location
+  - mission
+  - motivation
+  - team
+
+  # About the cells :
+  - cells
+
+  # About the events :
+  - events
+
+  # About the projects :
+  - projects
+
+  # About the trainings :
+  - trainings
+
+  # About the competitions :
+  - competitions
+
 responses:
 
   # General queries :
@@ -48,7 +70,38 @@ responses:
   utter_out_of_scope:
   - text: "Sorry, I don't understand."
 
-  
+  # About ENSIAS AI Club :
+  utter_about:
+  - text: "ENSIAS AI Club is a student club at ENSIAS, the National School of Computer Science in Rabat, Morocco. It was founded in 2019 by a group of students passionate about Artificial Intelligence."
+  utter_location:
+  - text: "ENSIAS AI Club is located at ENSIAS, the National School of Computer Science in Rabat, Morocco."
+  utter_mission:
+  - text: "ENSIAS AI Club aims to promote Artificial Intelligence among students and to help them develop their skills in this field."
+  utter_motivation:
+  - text: "ENSIAS AI Club is motivated by the desire to make Artificial Intelligence accessible to all students and to help them develop their skills in this field."
+  utter_team:
+  - text: "ENSIAS AI Club is composed of a team of students passionate about Artificial Intelligence."
+
+  # About the cells :
+  utter_cells:
+  - text: "ENSIAS AI Club has 4 cells: the Research Cell, the Development Cell, the Marketing Cell and the Design Cell."
+
+  # About the events :
+  utter_events:
+  - text: "ENSIAS AI Club organizes several events throughout the year: conferences, workshops, competitions, etc."
+
+  # About the projects :
+  utter_projects:
+  - text: "ENSIAS AI Club is working on several projects: the ENSIAS AI Club website, the ENSIAS AI Club chatbot, the ENSIAS AI Club mobile application, etc."
+
+  # About the trainings :
+  utter_trainings:
+  - text: "ENSIAS AI Club offers several trainings: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, etc."
+
+  # About the competitions :
+  utter_competitions:
+  - text: "ENSIAS AI Club participates in several competitions: MoroccoAI Competition, AI Day Hackathon, etc."
+
 
 session_config:
   session_expiration_time: 60
