@@ -47,6 +47,7 @@ export class HomeComponent implements OnInit {
   }
 
   sendMessage() {
+    let chatContainer = document.querySelector(".chat-container")!;
     var message = (<HTMLInputElement>document.getElementById("input")).value.trim();
     (<HTMLInputElement>document.getElementById("input")).value = "";
 
@@ -58,13 +59,14 @@ export class HomeComponent implements OnInit {
         message,
         false
       ));  
+      // chatContainer.scrollTo(0, chatContainer.scrollHeight);  
+      chatContainer.scrollTop = chatContainer.scrollHeight;    
       
+      // this.speechService.setVoice();
       
-      this.speechService.setVoice();
-      
-
       setTimeout(() => {
         this.currentMessages.push(this.typingDots);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
       }, 1000);
       setTimeout(() => {
         this.homeService.getResponse(message).subscribe(response => {
@@ -74,8 +76,10 @@ export class HomeComponent implements OnInit {
             'assets/HassanGPT.png',
             'Bot',
             response[0].text,
-            false
+            false,
+            response[0].image ?? null
           ));
+          chatContainer.scrollTop = chatContainer.scrollHeight;
           this.speechService.speak(response[0].text);
           this.saveChat();
         });

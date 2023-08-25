@@ -2,4 +2,10 @@
   <app-message
     [message]="message"
   ></app-message>
+  <div class="img-container" *ngIf="message.image">
+    <img
+      [src]="message.image"
+      class="img"
+    >
+  </div>
 </div>

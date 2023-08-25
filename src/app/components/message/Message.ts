@@ -5,6 +5,7 @@ export class Message {
         public avatar: string,
         public username: string,
         public content: string,
-        public typing: boolean = false
+        public typing: boolean = false,
+        public image?: string,
     ) { }
 }
