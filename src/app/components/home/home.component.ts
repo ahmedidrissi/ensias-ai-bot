@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
             'Bot',
             response[0].text,
             false,
-            response[0].image ?? null
+            response[1]?.image ?? null
           ));
           chatContainer.scrollTop = chatContainer.scrollHeight;
           this.speechService.speak(response[0].text);
