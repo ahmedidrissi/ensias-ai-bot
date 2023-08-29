@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HassanGPT": {
+    "Bot": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hassan-gpt",
+            "outputPath": "dist/ensias-ai-bot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "HassanGPT:build:production"
+              "browserTarget": "Bot:build:production"
             },
             "development": {
-              "browserTarget": "HassanGPT:build:development"
+              "browserTarget": "Bot:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HassanGPT:build"
+            "browserTarget": "Bot:build"
           }
         },
         "test": {

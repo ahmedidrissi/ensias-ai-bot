@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   currentMessages: Message[] = [];
   typingDots: Message = new Message(
     'incoming',
-    'assets/HassanGPT.png',
+    'assets/bot.png',
     'Bot',
     '',
     true
@@ -73,7 +73,7 @@ export class HomeComponent implements OnInit {
           this.currentMessages.pop();
           this.currentMessages.push(new Message(
             'incoming',
-            'assets/HassanGPT.png',
+            'assets/bot.png',
             'Bot',
             response[0].text,
             false,

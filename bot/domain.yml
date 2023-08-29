@@ -53,9 +53,9 @@ responses:
   - text: "You're welcome!"
   utter_bot_challenge:
   - text: "I am a bot created by ENSIAS AI Club. I am here to answer your questions about the club."
-    image: "./assets/HassanGPT.png"
+    image: "./assets/bot.png"
   utter_bot_name:
-  - text: "My name is HassanGPT."
+  - text: "My name is ENSIAS AI Bot."
   utter_bot_age:
   - text: "I am 1 year old."
   utter_ok:
